@@ -282,13 +282,23 @@ ul li {
 
 /*seccin portafolio*/
 
-.filtro :hover {
+.filtro {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.filtro:hover {
+  background-color: #2193f3;
+  color: #ffffff;
+}
+
+.filtro:focus {
+  background-color: #2193f3;
+  color: #ffffff;
 }
 
 .tittle_img {
