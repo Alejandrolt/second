@@ -291,12 +291,12 @@ ul li {
   text-align: center;
 }
 
-.filtro:hover {
+.filtro_nav:hover {
   background-color: #2193f3;
   color: #ffffff;
 }
 
-.filtro:focus {
+.filtro_nav:focus {
   background-color: #2193f3;
   color: #ffffff;
 }
