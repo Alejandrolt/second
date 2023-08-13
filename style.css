@@ -5,6 +5,18 @@ body {
   font-family: roboto;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.box_header {
+  height: 80px;
+  width: 1600px;
+  border: 1px;
+}
+
 .icono_web {
   color: #2196f3;
   text-decoration: none;
@@ -13,7 +25,7 @@ body {
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
 }
 
 .cursor {
@@ -24,6 +36,14 @@ ul li {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
+.pv_header {
+  padding: 24px 0;
+}
+
 .link_nav {
   text-decoration: none;
   color: #212121;
@@ -31,7 +51,24 @@ ul li {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-align: center;
+  margin-right: 215;
+}
+
+.navegation_container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navegation_link {
+  display: flex;
+  gap: 50px;
+}
+
+.navegation_contac {
+  display: flex;
+  column-gap: 50px;
 }
 
 .link_nav:hover {
@@ -66,14 +103,13 @@ ul li {
   color: #2193f3;
 }
 
-.fondo {
-  width: 1600px;
-  height: 200px;
+.color_fondo {
+  background-color: #212121;
+  text-align: center;
+  height: 600px;
   top: 80px;
   left: -4px;
-  background-color: #2f303a;
-  color: #ffffff;
-  text-align: center;
+  padding: 200px;
 }
 
 .title {
@@ -82,6 +118,8 @@ ul li {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
+  font-style: normal;
+  color: #ffffff;
 }
 
 .button_service {
@@ -95,7 +133,6 @@ ul li {
 }
 
 .about .about_attention {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -105,7 +142,6 @@ ul li {
 
 .about .attention_text {
   color: #757575;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -115,7 +151,6 @@ ul li {
 
 .about .about_puntuality {
   color: #757575;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -125,7 +160,6 @@ ul li {
 
 .about .puntuality_text {
   color: #757575;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -134,7 +168,6 @@ ul li {
 }
 
 .about .about_planning {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -144,7 +177,6 @@ ul li {
 
 .about .planning_text {
   color: #757575;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -153,7 +185,6 @@ ul li {
 }
 
 .about .about_technology {
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -163,7 +194,6 @@ ul li {
 
 .about .technology_text {
   color: #757575;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -171,26 +201,52 @@ ul li {
   text-align: left;
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_space {
+  display: flex;
+  column-gap: 30px;
+}
+
 .make {
-  font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+  padding: 94px 0px 55px;
+}
+
+.make_img {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding-bottom: 94px;
 }
 
 .our_team {
-  font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+  padding: 94px 0px 55px;
+}
+
+.team_block {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 37px;
+}
+
+.team_list {
   text-align: center;
 }
 
 .team .team1 {
-  font-family: Roboto;
   color: #212121;
   font-size: 16px;
   font-weight: 500;
@@ -199,7 +255,6 @@ ul li {
 }
 
 .team .team1_text {
-  font-family: Roboto;
   color: #757575;
   font-size: 16px;
   font-weight: 400;
@@ -208,7 +263,6 @@ ul li {
 }
 
 .team .team2 {
-  font-family: Roboto;
   color: #212121;
   font-size: 16px;
   font-weight: 500;
@@ -217,7 +271,6 @@ ul li {
 }
 
 .team .team2_text {
-  font-family: Roboto;
   color: #757575;
   font-size: 16px;
   font-weight: 400;
@@ -226,7 +279,6 @@ ul li {
 }
 
 .team .team3 {
-  font-family: Roboto;
   color: #212121;
   font-size: 16px;
   font-weight: 500;
@@ -235,7 +287,6 @@ ul li {
 }
 
 .team .team3_text {
-  font-family: Roboto;
   color: #757575;
   font-size: 16px;
   font-weight: 400;
@@ -244,7 +295,6 @@ ul li {
 }
 
 .team .team4 {
-  font-family: Roboto;
   color: #212121;
   font-size: 16px;
   font-weight: 500;
@@ -253,7 +303,6 @@ ul li {
 }
 
 .team .team4_text {
-  font-family: Roboto;
   color: #757575;
   font-size: 16px;
   font-weight: 400;
@@ -261,10 +310,18 @@ ul li {
   letter-spacing: 0.03em;
 }
 
+.color_team {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+}
+
+.tarjet_color {
+  background-color: #ffffff;
+}
+
 .link_footer {
   text-decoration: none;
   color: #ffffff;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -278,6 +335,8 @@ ul li {
 
 .color_footer {
   background-color: #212121;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /*seccin portafolio*/
@@ -301,6 +360,16 @@ ul li {
   color: #ffffff;
 }
 
+.orient_filtros {
+  display: flex;
+  justify-content: center;
+}
+
+.space_filtro {
+  display: flex;
+  gap: 50px;
+}
+
 .tittle_img {
   color: #212121;
   font-family: Roboto;
@@ -309,6 +378,7 @@ ul li {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
+  padding-left: 24px;
 }
 
 .text_img {
@@ -319,4 +389,25 @@ ul li {
   line-height: 1.8;
   letter-spacing: 0.03em;
   text-align: left;
+  padding-left: 24px;
+}
+
+.block_img {
+  display: flex;
+  justify-content: center;
+}
+
+.space_img {
+  display: flex;
+  column-gap: 30px;
+}
+
+.border_box_img {
+  width: 370px;
+  border-style: solid;
+  border-width: 1px;
+  border-left-color: #eeeeee;
+  border-right-color: #eeeeee;
+  border-bottom-color: #eeeeee;
+  border-top: #ffffff;
 }

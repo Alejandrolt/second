@@ -4,18 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="style_letter">
-    <header>
-      <nav>
+    <header class="cont_header">
+      <nav class="container navegation_container pv_header">
         <a class="icono_web filtro_nav" href="./index.html">Webstudio</a>
-        <ul>
+        <ul class="navegation_link">
           <li><a class="link_nav filtro_nav" href="#">Estudio</a></li>
           <li><a class="link_nav filtro_nav" href="#">Portafolio</a></li>
           <li><a class="link_nav filtro_nav" href="#">Contactos</a></li>
         </ul>
-        <ul>
+        <ul class="navegation_contac">
           <li>
             <a class="link_mail filtro_nav" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -29,9 +37,9 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <nav>
-        <ul>
+        <ul class="orient_filtros space_filtro">
           <li><button type="button" class="cursor filtro_nav">Todo</button></li>
           <li>
             <button type="button" class="cursor filtro_nav">Sitios-web</button>
@@ -50,26 +58,24 @@
         </ul>
       </nav>
       <section id="first_box">
-        <ul>
-          <li>
-            <img src="./Imagenes/Tecnoduck.jpg" alt="lapto_imag" width="370" />
-            <h3 class="tittle_img">Tecnoduck</h3>
-            <p class="text_img">Sitio-web</p>
+        <ul class="block_img space_img">
+          <li class="cursor border_box_img">
+            <img src="./Img/Tecnoduck.jpg" alt="lapto_imag" width="370" />
+            <div class="border_tarj">
+              <h3 class="tittle_img">Tecnoduck</h3>
+              <p class="text_img">Sitio-web</p>
+            </div>
           </li>
-          <li>
-            <img
-              src="./Imagenes/Basketball.jpg"
-              alt="jugadores_nba"
-              width="370"
-            />
+          <li class="cursor border_box_img">
+            <img src="./Img/Basketball.jpg" alt="jugadores_nba" width="370" />
             <h3 class="tittle_img">
               Póster de Nueva Orleans vs Estrella Dorada
             </h3>
             <p class="text_img">Diseño</p>
           </li>
-          <li>
+          <li class="cursor border_box_img">
             <img
-              src="./Imagenes/RestauranteSeafood.jpg"
+              src="./Img/RestauranteSeafood.jpg"
               alt="img_fish"
               width="370"
             />
@@ -79,24 +85,20 @@
         </ul>
       </section>
       <section id="second_box">
-        <ul>
-          <li>
-            <img
-              src="./Imagenes/Proyectoprime.jpg"
-              alt="audifonos"
-              width="370"
-            />
+        <ul class="block_img space_img">
+          <li class="cursor border_box_img">
+            <img src="./Img/Proyectoprime.jpg" alt="audifonos" width="370" />
             <h3 class="tittle_img">Proyecto Prime</h3>
             <p class="text_img">Marketing</p>
           </li>
-          <li>
-            <img src="./Imagenes/Proyectocajas.jpg" alt="cajas" width="370" />
+          <li class="cursor border_box_img">
+            <img src="./Img/Proyectocajas.jpg" alt="cajas" width="370" />
             <h3 class="tittle_img">Proyecto Cajas</h3>
             <p class="text_img">Aplicaciones</p>
           </li>
-          <li>
+          <li class="cursor border_box_img">
             <img
-              src="./Imagenes/lainspiracionnotienelimites.jpg"
+              src="./Img/lainspiracionnotienelimites.jpg"
               alt="monitor"
               width="370"
             />
@@ -106,24 +108,20 @@
         </ul>
       </section>
       <section id="third_box">
-        <ul>
-          <li>
-            <img
-              src="./Imagenes/Edicionlimitada.jpg"
-              alt="revisto"
-              width="370"
-            />
+        <ul class="block_img space_img">
+          <li class="cursor border_box_img">
+            <img src="./Img/Edicionlimitada.jpg" alt="revisto" width="370" />
             <h3 class="tittle_img">Edición Limitada</h3>
             <p class="text_img">Diseño</p>
           </li>
-          <li>
-            <img src="./Imagenes/Proyectolab.jpg" alt="etiqueta" width="370" />
+          <li class="cursor border_box_img">
+            <img src="./Img/Proyectolab.jpg" alt="etiqueta" width="370" />
             <h3 class="tittle_img">Proyecto LAB</h3>
             <p class="text_img">Marketing</p>
           </li>
-          <li>
+          <li class="cursor border_box_img">
             <img
-              src="./Imagenes/Negocioencrecim.jpg"
+              src="./Img/Negocioencrecim.jpg"
               alt="digitacion_lapto"
               width="370"
             />
@@ -134,29 +132,31 @@
       </section>
     </main>
     <footer class="color_footer">
-      <a class="icono_web filtro_nav" href="./index.html">Webstudio</a>
-      <address>
-        <ul>
-          <li>
-            <a
-              class="link_footer filtro_nav"
-              target="_blank"
-              href="https://www.google.es/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1350661,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es&entry=ttu"
-              >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-            >
-          </li>
-          <li>
-            <a class="link_footer filtro_nav" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="link_footer filtro_nav" href="tel:+525555296000"
-              >+52 55 5529 6000</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="icono_web filtro_nav" href="./index.html">Webstudio</a>
+        <address class="container">
+          <ul>
+            <li>
+              <a
+                class="link_footer filtro_nav"
+                target="_blank"
+                href="https://www.google.es/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1350661,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es&entry=ttu"
+                >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >
+            </li>
+            <li>
+              <a class="link_footer filtro_nav" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="link_footer filtro_nav" href="tel:+525555296000"
+                >+52 55 5529 6000</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
