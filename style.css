@@ -3,18 +3,18 @@
 
 body {
   font-family: roboto;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.style {
+  list-style: none;
+  padding: 0;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
-}
-
-.box_header {
-  height: 80px;
-  width: 1600px;
-  border: 1px;
 }
 
 .icono_web {
@@ -23,7 +23,7 @@ body {
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -52,23 +52,23 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-right: 215;
 }
 
 .navegation_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 50px;
 }
 
 .navegation_link {
-  display: flex;
+  display: inline-flex;
   gap: 50px;
+  padding-right: 215px;
 }
 
 .navegation_contac {
   display: flex;
-  column-gap: 50px;
+  gap: 50px;
 }
 
 .link_nav:hover {
@@ -82,11 +82,6 @@ button {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-align: left;
-}
-
-.link_mail:hover {
-  color: #2193f3;
 }
 
 .link_contac {
@@ -99,17 +94,14 @@ button {
   text-align: left;
 }
 
-.link_contac:hover {
-  color: #2193f3;
-}
-
 .color_fondo {
   background-color: #212121;
   text-align: center;
-  height: 600px;
-  top: 80px;
-  left: -4px;
-  padding: 200px;
+  padding: 94px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -132,12 +124,17 @@ button {
   text-align: center;
 }
 
+.box_funcion {
+  padding: 94px 0;
+}
+
 .about .about_attention {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 15px;
 }
 
 .about .attention_text {
@@ -147,15 +144,16 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 15px;
 }
 
 .about .about_puntuality {
-  color: #757575;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 15px;
 }
 
 .about .puntuality_text {
@@ -165,6 +163,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 15px;
 }
 
 .about .about_planning {
@@ -173,6 +172,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 15px;
 }
 
 .about .planning_text {
@@ -182,6 +182,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 15px;
 }
 
 .about .about_technology {
@@ -190,6 +191,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 15px;
 }
 
 .about .technology_text {
@@ -199,6 +201,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 15px;
 }
 
 .about {
@@ -215,9 +218,8 @@ button {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   text-align: center;
-  padding: 94px 0px 55px;
+  margin-bottom: 55.05px;
 }
 
 .make_img {
@@ -227,13 +229,17 @@ button {
   padding-bottom: 94px;
 }
 
+.box_team {
+  padding: 94px 0;
+}
+
 .our_team {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
-  padding: 94px 0px 55px;
+  padding-bottom: 50px;
 }
 
 .team_block {
@@ -312,7 +318,7 @@ button {
 
 .color_team {
   background-color: #f5f4fa;
-  padding-bottom: 94px;
+  padding-bottom: 94px 0;
 }
 
 .tarjet_color {
@@ -336,70 +342,76 @@ button {
 .color_footer {
   background-color: #212121;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 47px;
 }
 
 /*seccin portafolio*/
 
+.border {
+  border: 1px solid #eeeeee;
+  border-top: #ffffff;
+}
+
 .filtro {
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .filtro_nav:hover {
-  background-color: #2193f3;
-  color: #ffffff;
+  color: #2193f3;
 }
 
 .filtro_nav:focus {
-  background-color: #2193f3;
-  color: #ffffff;
+  color: #2193f3;
 }
 
 .orient_filtros {
   display: flex;
   justify-content: center;
+  padding-top: 32px;
 }
 
 .space_filtro {
   display: flex;
   gap: 50px;
+  padding-bottom: 32px;
 }
 
 .tittle_img {
   color: #212121;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  line-height: 1.8;
   text-align: left;
   padding-left: 24px;
 }
 
 .text_img {
   color: #757575;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
-  letter-spacing: 0.03em;
   text-align: left;
   padding-left: 24px;
 }
 
 .block_img {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .space_img {
   display: flex;
-  column-gap: 30px;
+  padding: 10px;
+}
+
+.box_img_port {
+  padding-bottom: 82px;
 }
 
 .border_box_img {
